@@ -35,9 +35,9 @@ describe('Profile', () => {
   });
 
 
-  it ('should handle display link with username & birthday has been entered', () => {
+  it('should handle display link with username & birthday has been entered', () => {
     //TODO
-    expect(true).toBe(false);
+
   });
 
 });

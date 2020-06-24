@@ -5,6 +5,7 @@ class Main extends Component {
   render() {
     return (
       <div className="Main">
+        <Link id="profile-link" to="/profile">profile</Link>
       </div>
     );
   }

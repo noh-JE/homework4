@@ -10,7 +10,7 @@ class Profile extends Component {
   handleChange = e => {
     const { name, value } = e.target;
     this.setState({
-      name: value
+      [name]: value
     });
   };
 
@@ -22,7 +22,7 @@ class Profile extends Component {
         <h1>Tell us about you</h1>
           <input
             id="username-input"
-            name="name"
+            name="username"
             placeholder="username"
             value={username}
             onChange={this.handleChange}
@@ -36,7 +36,7 @@ class Profile extends Component {
           /><br/>
         {username && 
           birthday &&
-          <Link to={"/fortune/"+username+"&"+birthday}>
+          <Link id="profile-link" to={"/fortune/"+username+"&"+birthday}>
             show my fortune
           </Link>}
       </div>
